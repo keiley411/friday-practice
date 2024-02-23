@@ -1,0 +1,26 @@
+[
+  {
+    "price": 57897,
+    "name": "rice",
+    "description": "food",
+    "id": "3efc0903-5d83-4452-9322-315634eaa5fc"
+  },
+  {
+    "price": 1785,
+    "name": "cactus",
+    "description": "tree",
+    "id": "8d69fbb6-c608-44cb-ae26-4024868a1a3b"
+  },
+  {
+    "price": 1795,
+    "name": "mango",
+    "description": "tree",
+    "id": "1d3cbd02-58a8-45f6-b70a-18928bef8aa4"
+  },
+  {
+    "price": 57897,
+    "name": "rice",
+    "description": "food 3",
+    "id": "e29fb2f1-9aad-490a-b85f-a47ab5136772"
+  }
+]
