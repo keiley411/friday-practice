@@ -8,6 +8,7 @@ const DATA_FOLDER = path.join("src", "Data");
 const PRODUCTS_FILE = path.join(DATA_FOLDER, "productsData.json");
 const id = Uuid.v4();
 
+// creating a folder and a file if they don't already exist
 const JsonData = async () => {
   try {
     if (!fs.existsSync(DATA_FOLDER)) {
@@ -24,6 +25,7 @@ const JsonData = async () => {
  *
  * @returns {{id: string, price: number, name: string, description: string}[]}
  */
+// reads the file and contents inside then returns the products//
 const getProducts = async () => {
   const productsFile = await fsPromises.readFile(PRODUCTS_FILE, {
     encoding: "utf8",
@@ -50,7 +52,7 @@ const addAllProducts = async (allProducts) => {
   await fsPromises.writeFile(PRODUCTS_FILE, JSON.stringify(products));
 };
 
-
+// deletes a product with a specific id then saves the updated products
 const deleteProduct = async (id) => {
   if (!id) {
     throw new Error("product deleted");
